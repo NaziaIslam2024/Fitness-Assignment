@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -6,7 +6,7 @@
 @font-face{
     font-family: miama;
     src: url('images/Miama.otf');
-}
+} */
 *{
     margin: 0px;
 }
@@ -16,7 +16,9 @@ body{
 }
 .change-habit,
 .run-extra,
-.our-team{
+.our-team,
+.bmi
+{
     margin: 5% 10% 6%;
 }
   /* header styles */
@@ -169,8 +171,10 @@ margin: 14px 0;
     justify-content: space-between;
     align-items: center;
     margin: 24px 0;
+    gap: 50px;
 }
 .habit-card{
+    margin-top: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -178,8 +182,17 @@ margin: 14px 0;
 .card-img img{
     border-radius: 50%;
 }
+.card-title{
+    margin-top: 30px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
 .card-description{
+    margin-top: 6px;
     text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
 }
 
 /* run an extra section styles */
@@ -203,8 +216,88 @@ margin: 14px 0;
 .run-extra-info > button{
     width: 100%;
 }
-/* our team section styles  */
 
+/* BMI Calculator section styles */
+.calculator-container{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.table{
+    margin-top: 52px;
+}
+table, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    padding: 15px 18px;
+    text-align: left;
+}
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+.bmi > div > h4,
+.bmi-calculator > h4{
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.bmi{
+    padding: 50px 0px;
+}
+.bmi-calculator{
+    flex-direction: column;
+    margin-left: 36%;
+}
+.bmi-calculator > p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 34px;
+}
+.bmi-calc-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+#factor{
+    grid-column: 1 / span 2;
+}  
+.bmi-calc-form:nth-last-child(){
+    grid-template-rows: 100% 1fr;
+}
+.bmi-calc-form > button{
+    margin-top: 34px;
+}
+.bmi-calc-form > input, select, option{
+    padding: 13px 20px;
+    margin: 3px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/* our team section styles  */
 .our-team{
     flex-direction: column;
 }
@@ -230,6 +323,40 @@ margin: 14px 0;
 .team-card > p{
     margin-left: 20px;
 }
+
+/* styel for footer */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    margin: 5% 10% 0%;
+}
+.upper-footer{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;  
+    padding: 66px 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.fitness-footer{
+    margin-top: 20px;
+    margin-right: 102px;
+}
+.fitness-footer > .section-description{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.reserved-footer{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 35px 0;
+}
+
+
  /* RESPONSIVE FOR SMALL DEVICES */
 
 @media screen and (max-width:576px){
