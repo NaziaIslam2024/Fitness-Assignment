@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -6,7 +6,7 @@
 @font-face{
     font-family: miama;
     src: url('images/Miama.otf');
-} */
+}
 *{
     margin: 0px;
 }
@@ -346,6 +346,21 @@ footer{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     font-weight: 400;
+}
+.footer-menu > ul{
+    list-style: none;
+}
+.footer-menu > h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.footer-menu > ul > li{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.44rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -15%;
 }
 .reserved-footer{
     text-align: center;
