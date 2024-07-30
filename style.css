@@ -382,10 +382,11 @@ footer{
 /* header style for small device */
    
 header {
-        margin-top:51px;
+        margin-top:0px;
     }
     .mobile-menu{
         display: block;
+        margin-top: 28px;
     }
     .nav-list{
         display: none;
@@ -429,9 +430,12 @@ header {
     }
     .badge500{
         margin-top: 20%;
-        margin-left: 56%;
-       
+        margin-left: 54%; 
+        padding: 15px; 
     }
+    .badge-title500{
+    font-size: 1.875rem;
+}
     .badge350{
         margin-top: 38%;
         margin-left: 4%;
