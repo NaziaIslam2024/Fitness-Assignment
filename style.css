@@ -120,6 +120,15 @@ nav{
     background: #E6533C;
     margin-right: 15px;
 }
+.white-tri {
+    margin-top: 12px;
+    margin-left: 14px;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid white;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+}
 .badge{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -273,11 +282,11 @@ td{
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: left;
-    margin-bottom: 34px;
 }
 .bmi-calc-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.6);
@@ -381,7 +390,7 @@ footer{
  
 /* header style for small device */
    
-header {
+    header{
         margin-top:0px;
     }
     .mobile-menu{
@@ -393,12 +402,17 @@ header {
     }
     nav{
         margin-bottom: 52px;
+        align-items: baseline;
+    }
+    .logo-text{
+        font-size: 32px;
     }
     .banner-img{
         min-height: 550px;
         background-image: url(/images/Images\ 2.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         
     }
     .banner{
@@ -428,17 +442,40 @@ header {
     #mobile-off{
         display: none;
     }
-    .badge500{
+    .white-tri {
+        margin-top: 12px;
+        margin-left: 14px;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid white;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+    }
+    .badge{
+        padding: 11px 10px 0px;
+    }
+    .badge500 {
         margin-top: 20%;
-        margin-left: 54%; 
-        padding: 15px; 
+        margin-left: 50%;
+        margin-right: 5%;
+        font-size: 12px;
+        width: 35%;
     }
     .badge-title500{
-    font-size: 1.875rem;
-}
+    font-size: 1rem;
+    }
     .badge350{
         margin-top: 38%;
         margin-left: 4%;
+    }
+    .white-tri {
+        margin-top: 12px;
+        margin-left: 14px;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid white;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
     }
     /* change your habit section for small devices */
     .habit-card-container{
@@ -468,14 +505,23 @@ header {
     }
     .bmi{
         flex-direction: column;
-        margin: 20px;
+        padding: 50px 0px 0px 0px;
+        margin: 5% 10% 0%;
+    }
+    .bmi-calculator{
+        margin: 42px 0px 0px 0px;
     }
     .bmi > div > h4{
         font-size: 1rem;
     }
-    .bmi-calculator{
-        margin: 42px 0px;
+    .bmi-calc-form {
+        width: 90%;
+        padding-left: 5%;
+        padding-bottom: 43px;
     }
+    /* .bmi-calculator{
+        margin: 42px 0px;
+    } */
     .team-container{
         grid-template-columns: 1fr;
     }
@@ -485,9 +531,6 @@ header {
     .upper-footer {
         padding-top: 44px;
         grid-template-columns: 1fr;
-    }
-    .logo-text{
-        font-size: 4.38rem;
     }
     .fitness-footer > .section-description {
         margin-bottom: 30px;
