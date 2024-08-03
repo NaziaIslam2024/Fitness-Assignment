@@ -480,11 +480,8 @@ footer{
     /* change your habit section for small devices */
     .habit-card-container{
         flex-direction: column;
+        margin-bottom: 80px;
     }
-    /* .change-habit{
-        display: flex;
-        flex-direction: column;
-    } */
      .section-title{
         font-size: 2rem;
      }
