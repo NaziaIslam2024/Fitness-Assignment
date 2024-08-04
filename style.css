@@ -283,6 +283,9 @@ td{
     letter-spacing: 0.3px;
     text-align: left;
 }
+#mobile-form{
+    display: none;
+}
 .bmi-calc-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -503,22 +506,24 @@ footer{
     .bmi{
         flex-direction: column;
         padding: 50px 0px 0px 0px;
-        margin: 5% 10% 0%;
+        margin: 5% 7% 0%;
     }
     .bmi-calculator{
         margin: 42px 0px 0px 0px;
+        overflow: hidden;
     }
     .bmi > div > h4{
         font-size: 1rem;
     }
     .bmi-calc-form {
-        width: 90%;
-        padding-left: 5%;
         padding-bottom: 43px;
     }
-    /* .bmi-calculator{
-        margin: 42px 0px;
-    } */
+    #mobile-form{
+        display: block;
+    }
+    #web-form{
+        display: none;
+    }
     .team-container{
         grid-template-columns: 1fr;
     }
