@@ -289,7 +289,7 @@ td{
 .bmi-calc-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    /* width: 100%; */
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.6);
@@ -471,15 +471,6 @@ footer{
         margin-top: 38%;
         margin-left: 4%;
     }
-    .white-tri {
-        margin-top: 12px;
-        margin-left: 14px;
-        width: 0px;
-        height: 0px;
-        border-left: 15px solid white;
-        border-bottom: 8px solid transparent;
-        border-top: 8px solid transparent;
-    }
     /* change your habit section for small devices */
     .habit-card-container{
         flex-direction: column;
@@ -518,12 +509,19 @@ footer{
     .bmi-calc-form {
         padding-bottom: 43px;
     }
-    #mobile-form{
-        display: block;
+    .bmi-calc-form > input {
+        width: 70%;
     }
-    #web-form{
-        display: none;
+    .bmi-calc-form > select, option  {
+        width: 95%;
     }
+    #factor {
+        width: 97%;
+    }
+    /* .bmi-calc-form > input, select, option {
+        width: 40%;
+    } */
+    /* TEAM section style */
     .team-container{
         grid-template-columns: 1fr;
     }
