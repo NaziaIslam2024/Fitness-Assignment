@@ -17,7 +17,8 @@ body{
 .change-habit,
 .run-extra,
 .our-team,
-.bmi
+.bmi,
+.facilities
 {
     margin: 5% 10% 6%;
 }
@@ -386,6 +387,109 @@ footer{
     padding: 35px 0;
 }
 
+/* unique section styles */
+.facility-card-container{
+    flex-wrap: wrap;  
+}
+.facility-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.facility-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.facility-animation{
+    border: 1px solid rgba(230, 83, 60, 0.5);
+    border-radius: 8px;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.facility-details{
+    text-align: justify;
+    background: rgba(230, 83, 60, 0.5);
+    font-size: 0.800rem;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0;
+
+}
+.facility-card:hover .facility-title{
+    opacity: 0;
+}
+.facility-card:hover .facility-details{
+    opacity: 1;
+    animation: fade 1s linear;
+
+}
+@keyframes fade {
+    0%{ opacity: 0; }
+    50% { opacity: 0.5; 
+  background:rgba(95, 18, 6, 0.5);;}
+    100%{ opacity: 1;
+  background:rgba(230, 83, 60, 0.5);
+  border: 1px solid rgba(230, 83, 60, 0.5);}
+  }
+.facilities li{
+    list-style: none;
+}
+.mobileshow{
+    display: none;
+}
+
+/* testimonial styles */
+.testimoni-container{
+    height: 320px;
+    width: 60%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.testimoni-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: slide 20s ease-in-out infinite;
+    transition-delay: 2s;
+}
+@keyframes slide {
+    0%{
+        top: 0px;
+    } 
+    100%{
+        top: -640px;
+    }
+  }
+  .testimoni-card > p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+.testimonial-avater{
+    border-radius: 50%;
+    width: 50px;
+    margin-bottom: 20px;
+}
+marquee {
+    margin-top: 40px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 
  /* RESPONSIVE FOR SMALL DEVICES */
 
@@ -509,19 +613,7 @@ footer{
     .bmi-calc-form {
         padding-bottom: 43px;
     }
-    .bmi-calc-form > input {
-        width: 70%;
-    }
-    .bmi-calc-form > select, option  {
-        width: 95%;
-    }
-    #factor {
-        width: 97%;
-    }
-    /* .bmi-calc-form > input, select, option {
-        width: 40%;
-    } */
-    /* TEAM section style */
+/* footer section style */
     .team-container{
         grid-template-columns: 1fr;
     }
@@ -539,5 +631,34 @@ footer{
         margin-top: 20px;
         margin-left: -35px;
         margin-bottom: 20px;
+    }
+
+    /* unique section style */
+    .facility-container{
+        flex-direction: column;
+    }
+    .testimoni-container {
+        width: 100%;
+    }
+    .facility-card-container {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .facility-title {
+        font-size: 1rem;
+    }
+    .facility-animation{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .facility-details{
+        overflow: scroll;
+    }
+    .mobileshow{
+        display: block;
+    }
+    .webshow{
+        display: none;
     }
 } 
